@@ -1,134 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GaboCode-Curriculum</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <main>
+      <header>
+        <div class="container cabecera">
+          <a
+            href="https://www.youtube.com/@GaboCodeYT"
+            target="_blank"
+            class="logo-link"
+          >
+            <img src="assets/Youtube_logo.png" alt="YouTube Logo" />
+            {GABOCODE}
+          </a>
+          <nav>
+            <a href="#presentacion">Sobre mi</a>
+            <a href="#tecnologias">Tecnologías</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contactos</a>
+          </nav>
+        </div>
+      </header>
 
-        <header>
-            <div class = "cabecera">
+      <section id="presentacion">
+        <div class="container">
+          <img id="logo" src="assets/logo.png" alt="logo" />
+          <h1>{GaboCode}</h1>
+          <p>
+            <strong
+              >Hola, soy Gabriel. Código limpio. Diseño intuitivo. Resultados
+              reales. Construyamos algo genial.</strong
+            >
+          </p>
+          <a
+            href="assets/CV_GABOCODE_JUNIOR.pdf"
+            download="CV_Gabriel_GaboCode.pdf"
+            class="btn-cv"
+            >Descargar CV</a
+          >
+        </div>
+      </section>
 
-                
-                <a href="https://www.youtube.com/@GaboCodeYT" target="_blank" class="logo-link"><img src="assets/Youtube_logo.png" alt="">{GABOCODE}</a>
-
-                <nav>
-                    <a href="#presentacion">Sobre mi</a>
-                    <a href="#tecnologias">Tecnologías</a>
-                    <a href="#proyectos">Proyectos</a>
-                    <a href="#contacto">Contactos</a>
-                </nav>
-
+      <section id="tecnologias">
+        <div class="container">
+          <h2>Tecnologías</h2>
+          <div class="container-cartas-tech">
+            <div class="carta-tech">
+              <img src="assets/html.svg" alt="HTML5" />
+              <h4>HTML5</h4>
             </div>
-
-
-        </header>
-
-        <section id="presentacion">
-
-            <div class="container">
-                <img id="logo" src="assets/logo.png" alt="logo">
-                <h1>{GaboCode}</h1>
-                <p><strong>Hola, soy Gabriel. Código limpio. Diseño intuitivo. Resultados reales. Construyamos algo genial.</strong></p>
-                <a href="assets/CV_GABOCODE_JUNIOR.pdf" download="CV_Gabriel_GaboCode.pdf" class="btn-cv">Descargar CV</a>
+            <div class="carta-tech">
+              <img src="assets/css.svg" alt="CSS" />
+              <h4>CSS</h4>
             </div>
-
-        </section>
-
-        <section id="tecnologias">
-
-            
-
-                <h2>Tecnologías</h2>
-
-
-                <div class="container-cartas-tech">
-
-                    <div class="carta-tech">
-
-                        <img src="assets/html.svg" alt="html">
-                        <h4>HTML5</h4>
-                    
-                    </div>
-
-                    <div class="carta-tech">
-
-                    <img src="assets/css.svg" alt="html">
-                    <h4>CSS</h4>
-                    
-                    </div>
-
-                    <div class="carta-tech">
-
-                        <img src="assets/js.svg" alt="html">
-                        <h4>JavaScript</h4>
-                    
-                    </div>
-
-                    <div class="carta-tech">
-
-                        <img src="assets/java.svg" alt="html">
-                        <h4>Java</h4>
-                    
-                    </div>
-
-                    <div class="carta-tech">
-
-                    <img src="assets/php.svg" alt="html">
-                    <h4>PHP</h4>
-                    
-                    </div>
-
-                    <div class="carta-tech">
-
-                        <img src="assets/mysql.svg" alt="html">
-                        <h4>MySQL</h4>
-                    
-                    </div>
-
-
-
+            <div class="carta-tech">
+              <img src="assets/js.svg" alt="JS" />
+              <h4>JavaScript</h4>
             </div>
-
-        </section>
-
-        <section id="proyectos">
-
-                <h2>Mis Proyectos</h2>
-
-                <div class="container-cartas">
-                <div class="carta">
-                    <h3>Sistema Digital de Registro y Control Académico</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis deserunt, illo adipisci earum nihil quae culpa reprehenderit tenetur a</p>
-                    <button>+Info</button>                
-                </div>
-
-                <div class="carta">
-                    <h3>Sistema Digital de Registro y Control Académico</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis deserunt, illo adipisci earum nihil quae culpa reprehenderit tenetur a</p>
-                    <button>+Info</button>                
-                </div>
-
-                <div class="carta">
-                    <h3>Sistema Digital de Registro y Control Académico</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis deserunt, illo adipisci earum nihil quae culpa reprehenderit tenetur a</p>
-                    <form action="https://www.youtube.com/@GaboCodeYT" target="_blank"><button>+Info</button></form>                
-                </div>
-
+            <div class="carta-tech">
+              <img src="assets/java.svg" alt="Java" />
+              <h4>Java</h4>
             </div>
-        </section>
+            <div class="carta-tech">
+              <img src="assets/php.svg" alt="PHP" />
+              <h4>PHP</h4>
+            </div>
+            <div class="carta-tech">
+              <img src="assets/mysql.svg" alt="MySQL" />
+              <h4>MySQL</h4>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <footer id="contacto">
-            <img src="assets/email.svg" alt="">
-            <h3 class="proteger-correo">moc.liamg@321edocobag</h3>
-        </footer>
+      <section id="proyectos">
+        <div class="container">
+          <h2>Mis Proyectos</h2>
+          <div class="container-cartas">
+            <div class="carta">
+              <h3>Sistema Digital de Registro y Control Académico</h3>
+              <p>Descripción del proyecto...</p>
+              <a href="#" class="btn-cv">+Info</a>
+            </div>
+            <div class="carta">
+              <h3>Sistema Digital de Registro y Control Académico</h3>
+              <p>Descripción del proyecto...</p>
+              <a href="#" class="btn-cv">+Info</a>
+            </div>
+            <div class="carta">
+              <h3>Canal de YouTube</h3>
+              <p>Descripción del proyecto...</p>
+              <a
+                href="https://www.youtube.com/@GaboCodeYT"
+                target="_blank"
+                class="btn-cv"
+                >+Info</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="contacto">
+        <img src="assets/email.svg" alt="Email Icon" />
+        <h3 class="proteger-correo">moc.liamg@321edocobag</h3>
+      </footer>
     </main>
-    
-</body>
+  </body>
 </html>
