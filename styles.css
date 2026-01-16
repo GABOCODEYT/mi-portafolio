@@ -1,343 +1,280 @@
-html{
-    scroll-behavior: smooth;
-}
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(27, 27, 27);
-    margin: 0;
+/* --- Estilos Base --- */
+html {
+  scroll-behavior: smooth;
 }
 
-
-button{
-    font-size: 1.3em;
-    font-weight: bold;
-    padding: 15px;
-    border-radius: 15px;
-    border: 2px solid black;
-    margin-bottom: 20px;
-    box-shadow: 2px 2px 10px black;
-    color: black;
-    background-color: aqua;
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(27, 27, 27);
+  margin: 0;
+  color: white;
 }
 
-button:hover{
-    background-color: deepskyblue;
-    border-bottom: 5px solid rgb(0, 0, 0);
+p {
+  font-size: 26px;
 }
 
-a{
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    padding-top: 15px;
-    padding-bottom: 15px;
+/* --- Layout --- */
+.container {
+  max-width: 1400px;
+  margin: auto;
 }
 
-header img{
-
-    width: 30px;
-    border-radius: 10px;
+/* --- Header & Nav --- */
+header {
+  background-color: rgb(43, 43, 43);
+  padding: 10px 0;
 }
 
-a:hover{
-    color: aqua;
+header .cabecera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.container{
-    max-width: 1400px;
-    margin: auto;
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-header{
-    background-color: rgb(43, 43, 43);;
-    margin-bottom: 0px;
-    display: block;
-}
-
-header .cabecera{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-header nav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+header img {
+  width: 30px;
+  border-radius: 10px;
 }
 
 .logo-link {
-    display: flex;        
-    align-items: center;  
-    gap: 10px;           
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px 0;
 }
 
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  padding: 15px;
+  transition: color 0.3s;
+}
 
-#logo{
-    width: 300px;
-    border-radius: 50%;
-    margin-top: 20px;
-    border-style: solid;
-    border-color: white;
-    animation: pulse 3s infinite ease-in-out;
+nav a:hover {
+  color: aqua;
+}
 
+/* --- Sección Presentación --- */
+#presentacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#presentacion h1 {
+  font-size: 50px;
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+
+#presentacion p {
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+
+#logo {
+  width: 300px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 4px solid white;
+  animation: pulse 3s infinite ease-in-out;
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 255, 255, 0.4); }
-    70% { transform: scale(1.05); box-shadow: 0 0 20px 10px rgba(0, 255, 255, 0); }
-    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 255, 255, 0); }
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 255, 255, 0.4);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 10px rgba(0, 255, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 255, 255, 0);
+  }
 }
 
-#presentacion{
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center; 
-    flex-direction: column;
-    height: 90vh;
-    background-image: linear-gradient(
-     0deg,
-     rgba(0,0,0,0.5),  
-     rgba(0,0,0,0.5) 
-    ), url("assets/fondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-#presentacion h1{
-    font-size: 50px;
-    text-shadow: 
-        -2px -2px 0 #000,  
-         2px -2px 0 #000,
-        -2px  2px 0 #000,
-         2px  2px 0 #000;
-}
-
-#presentacion p{
-   text-shadow: 
-        -2px -2px 0 #000,  
-         2px -2px 0 #000,
-        -2px  2px 0 #000,
-         2px  2px 0 #000;
-}
-
-#tecnologias h2{
-    color: white;
-    text-align: center;
-    margin-top: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top: 2px solid rgb(57, 57, 57);
-    border-bottom: 2px solid rgb(57, 57, 57);
-}
-
-#proyectos h2{
-    margin-bottom: 50px;
-    margin-top: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top: 2px solid rgb(57, 57, 57);
-    border-bottom: 2px solid rgb(57, 57, 57);
-}
-.container-cartas-tech{
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 40px;
-    margin-bottom: 50px;
-}
-
-.container-cartas-tech img{
-    width: 150px;
-}
-
-
-#proyectos{
-    color: white;
-    background-color: rgb(27, 27, 27);
-    text-align: center;
-}
-
-#proyectos p{
-    display: none;
-}
-
-.container-cartas{
-    color: white;
-}
-
-.carta{
-    height: 200px;
-    margin-bottom: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding: 50px;
-    background-position: center center;
-    border-radius: 30px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: all 0.4s ease-in-out;
-}
-
-.carta:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0px 15px 30px rgba(54, 235, 255, 0.5);
-    filter: brightness(1.5); 
-}
-
-.carta:first-child{
-
-    background-image: linear-gradient(
-     0deg,
-     rgba(0,0,0,0.5),  
-     rgba(0,0,0,0.8) 
-    ), url("assets/sdrca.jpeg");
-
-}
-.carta:nth-child(2){
-
-    background-image: linear-gradient(
-     0deg,
-     rgba(0,0,0,0.5),  
-     rgba(0,0,0,0.8) 
-    ), url("assets/sdrca.jpeg");
-
-}
-
-.carta:nth-child(3){
-
-    background-image: linear-gradient(
-     0deg,
-     rgba(0,0,0,0.5),  
-     rgba(0,0,0,0.8) 
-    ), url("assets/sdrca.jpeg");
-
-} 
-
-.carta-tech{
-    background-color: rgb(45, 45, 45);
-    padding: 10px;
-    border-radius: 15px;
-    width: 200px;
-    text-align: center;
-    transition: transform 0.3s ease;
-    border-bottom: 3px solid aqua;
-    margin-bottom: 20px;  
-    margin-left: 10px;
-    margin-right: 10px; 
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
-}
-
-.carta-tech:hover {
-    transform: scale(1.1); 
-    box-shadow: 0px 10px 20px rgba(0, 255, 255, 0.3);
-    border-color: white; 
-}
-
-footer{
-    height: 100px;
-    background-color: rgb(43, 43, 43);
-    color: white;
-    font-size: 1.0em;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-} 
-
-footer img{
-    width: 50px;
-}
-
-.proteger-correo {
-    unicode-bidi: bidi-override;
-    direction: rtl;
-}
-
-p{
- font-size: 26px;   
-}
-
+/* --- Botones --- */
 .btn-cv {
-    display: inline-block;
-    background-color: transparent;
-    color: white;
-    border: 4px solid aqua;
-    padding: 10px 10px;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    margin-top: 10px;
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  border: 4px solid aqua;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 10px;
 }
 
 .btn-cv:hover {
-    background-color: aqua;
-    color: black;
-    box-shadow: 0 0 15px aqua; /* Efecto de brillo */
-    transform: translateY(-3px); /* Se mueve un poquito hacia arriba */
+  background-color: aqua;
+  color: black;
+  box-shadow: 0 0 15px aqua;
+  transform: translateY(-3px);
 }
 
+/* --- Secciones de Títulos --- */
+#tecnologias h2,
+#proyectos h2 {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px 0;
+  border-top: 2px solid rgb(57, 57, 57);
+  border-bottom: 2px solid rgb(57, 57, 57);
+}
+
+/* --- Tecnologías --- */
+.container-cartas-tech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.carta-tech {
+  background-color: rgb(45, 45, 45);
+  padding: 20px;
+  border-radius: 15px;
+  width: 200px;
+  text-align: center;
+  border-bottom: 3px solid aqua;
+  transition:
+    transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    box-shadow 0.3s ease;
+}
+
+.carta-tech img {
+  width: 100px;
+}
+
+.carta-tech:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(0, 255, 255, 0.3);
+}
+
+/* --- Proyectos --- */
+#proyectos p {
+  display: none;
+}
+
+.carta {
+  height: 200px;
+  margin: 0 40px 40px 40px;
+  padding: 50px;
+  border-radius: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.4s ease-in-out;
+  text-align: center;
+}
+
+.carta:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0px 15px 30px rgba(54, 235, 255, 0.5);
+  filter: brightness(1.2);
+}
+
+.carta:nth-child(1),
+.carta:nth-child(2),
+.carta:nth-child(3) {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("assets/sdrca.jpeg");
+}
+
+/* --- Footer --- */
+footer {
+  height: 100px;
+  background-color: rgb(43, 43, 43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+footer img {
+  width: 50px;
+}
+
+.proteger-correo {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+/* --- Responsive (Desktop) --- */
 @media (min-width: 720px) {
-    header .cabecera{
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 50px;
-    }
+  header {
+    position: sticky;
+  }
 
-    header nav{
-        flex-direction: row;
-        gap: 20px;
-    }
+  header .cabecera {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
 
-    header h4{
-        padding-top: 0px;
-    }
+  header nav {
+    flex-direction: row;
+    gap: 20px;
+  }
 
-    .container-cartas h3{
-        font-size: 1em;
-    }
+  .container-cartas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
 
-    .container-cartas{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-       
-        
-    }
+  .carta {
+    width: 30%;
+    margin: 0 0 50px 0;
+  }
 
-    .carta{
-        height: 100px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 200px;
-    }
+  .container-cartas-tech {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    button{
-        font-size: 1.1em;
-        padding: 10px;
-        border-radius: 15px;
-        border: 2px solid black;
-        margin-bottom: 10px;
-    }
+  .carta-tech {
+    width: 150px;
+  }
 
-    .container-cartas-tech{
-        flex-direction: row;
-    }
+  .carta-tech img {
+    width: 80px;
+  }
+}
 
-    .carta-tech{
-        width: 100px;
-    }
-
-    .container-cartas-tech img{
-        width: 80px;
-    }
 
 }
+
 
