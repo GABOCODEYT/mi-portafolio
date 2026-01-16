@@ -232,7 +232,6 @@ header nav{
     margin-left: 10px;
     margin-right: 10px; 
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
-    cursor: pointer;
 }
 
 .carta-tech:hover {
@@ -341,3 +340,4 @@ p{
     }
 
 }
+
